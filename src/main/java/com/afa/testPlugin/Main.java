@@ -23,6 +23,7 @@ public final class Main extends JavaPlugin {
         getCommand("gmsp").setExecutor(new gmspCommand(this));
         getCommand("gamemode").setExecutor(new GamemodeCommand(this));
         getCommand("god").setExecutor(new GodCommand(this));
+//        getCommand("config").setExecutor(new ConfigCommand(this));
 
         // EVENTS
         Bukkit.getPluginManager().registerEvents(new PlayerJoin(this), this);

@@ -14,3 +14,6 @@ commands:
   gmsp:
   gamemode:
   god:
+#  config:
+#    description: enable or disable commands.
+#    usage: /config <command> [<true/false>]
