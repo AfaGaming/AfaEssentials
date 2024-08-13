@@ -1,0 +1,16 @@
+name: AfaEssentials
+version: '1.0-SNAPSHOT'
+main: com.afa.testPlugin.Main
+api-version: '1.21'
+authors: [ AfaGaming ]
+description: A cool test plugin.
+commands:
+  heal:
+  feed:
+  fly:
+  gmc:
+  gms:
+  gma:
+  gmsp:
+  gamemode:
+  god:

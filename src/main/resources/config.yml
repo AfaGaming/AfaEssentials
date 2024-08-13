@@ -1,0 +1,49 @@
+# Customize all commands below.
+commands:
+  heal:
+    # Should this command be enabled?
+    enabled: true
+    # If the command is disabled, what message should we send to players who try to run it? Leave as "" for nothing.
+    disabled-message: "&c/heal is currently disabled."
+    # What permission should players require in order to use this command?
+    permission: "afaessentials.heal"
+    # What message should be sent to players who don't have permission to use this command?
+    permission-message: "&cYou don't have permission to do that!"
+  feed:
+    # Should this command be enabled?
+    enabled: true
+    # If the command is disabled, what message should we send to players who try to run it? Leave as "" for nothing.
+    disabled-message: "&c/feed is currently disabled."
+    # What permission should players require in order to use this command?
+    permission: "afaessentials.feed"
+    # What message should be sent to players who don't have permission to use this command?
+    permission-message: "&cYou don't have permission to do that!"
+  gamemode:
+  # Should this command be enabled?
+  enabled: true
+  # If the command is disabled, what message should we send to players who try to run it? Leave as "" for nothing.
+  disabled-message: "&c/gamemode is currently disabled."
+  # What permission should players require in order to use this command?
+  permission: "afaessentials.gamemode"
+  # What message should be sent to players who don't have permission to use this command?
+  permission-message: "&cYou don't have permission to do that!"
+  god:
+    # Should this command be enabled?
+    enabled: true
+    # If the command is disabled, what message should we send to players who try to run it? Leave as "" for nothing.
+    disabled-message: "&c/god is currently disabled."
+    # What permission should players require in order to use this command?
+    permission: "afaessentials.god"
+    # What message should be sent to players who don't have permission to use this command?
+    permission-message: "&cYou don't have permission to do that!"
+
+# Customize all events below
+events:
+  onJoin:
+    # Should this feature be enabled?
+    enabled: false # THIS IS CURRENTLY BUGGED - DO NOT ENABLE
+    # Set the join message below.
+    JoinMessage: ""
+
+# End of configuration
+# Made by Afa
