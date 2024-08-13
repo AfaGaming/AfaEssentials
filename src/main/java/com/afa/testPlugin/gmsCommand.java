@@ -23,12 +23,12 @@ public class gmsCommand implements CommandExecutor {
                     player.sendMessage(ChatColor.GREEN + "You are now in survival mode!");
                     player.setGameMode(GameMode.SURVIVAL);
                 } else {
-                    player.sendMessage(main.getConfig().getString("commands.gamemode.permission-message"));
+                    player.sendMessage(ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("commands.gamemode.permission-message")));
                 }
             }
         } else {
             if (sender instanceof Player) {
-                ((Player) sender).sendMessage(main.getConfig().getString("commands.gamemode.disabled-message"));
+                ((Player) sender).sendMessage(ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("commands.gamemode.disabled-message")));
             } else {
                 Bukkit.getLogger().warning(main.getConfig().getString("commands.gamemode.disabled-message"));
             }
