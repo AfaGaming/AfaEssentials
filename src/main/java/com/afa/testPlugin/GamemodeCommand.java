@@ -62,14 +62,14 @@ public class GamemodeCommand implements CommandExecutor {
                         player.sendMessage(ChatColor.RED + "Please specify a gamemode!");
                     }
                 } else {
-                    player.sendMessage(main.getConfig().getString("commands.gamemode.permission-message"));
+                    player.sendMessage(ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("commands.gamemode.permission-message")));
                 }
             } else {
                 Bukkit.getLogger().info("This command can only be used by players.");
             }
         } else {
             if (sender instanceof Player) {
-                ((Player) sender).sendMessage(main.getConfig().getString("commands.gamemode.disabled-message"));
+                ((Player) sender).sendMessage(ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("commands.gamemode.disabled-message")));
             } else {
                 Bukkit.getLogger().warning(main.getConfig().getString("commands.gamemode.disabled-message"));
             }

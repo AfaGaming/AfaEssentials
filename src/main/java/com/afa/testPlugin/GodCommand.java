@@ -27,13 +27,13 @@ public class GodCommand implements CommandExecutor {
                         player.setInvulnerable(true);
                     }
                 } else {
-                    player.sendMessage(main.getConfig().getString("commands.god.permission-message"));
+                    player.sendMessage(ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("commands.god.permission-message")));
                 }
             }
 
         } else {
             if (sender instanceof Player) {
-                ((Player) sender).sendMessage(main.getConfig().getString("commands.god.disabled-message"));
+                ((Player) sender).sendMessage(ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("commands.god.disabled-message")));
             } else {
                 Bukkit.getLogger().warning(main.getConfig().getString("commands.god.disabled-message"));
             }

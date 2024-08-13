@@ -27,12 +27,12 @@ public class FlyCommand implements CommandExecutor {
                         player.sendMessage(ChatColor.GREEN + "Flight mode enabled.");
                     }
                 } else {
-                    player.sendMessage(main.getConfig().getString("commands.fly.permission-message"));
+                    player.sendMessage(ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("commands.fly.permission-message")));
                 }
             }
         } else {
             if (sender instanceof Player) {
-                ((Player) sender).sendMessage(main.getConfig().getString("commands.fly.disabled-message"));
+                ((Player) sender).sendMessage(ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("commands.fly.disabled-message")));
             } else {
                 Bukkit.getLogger().warning(main.getConfig().getString("commands.fly.disabled-message"));
             }

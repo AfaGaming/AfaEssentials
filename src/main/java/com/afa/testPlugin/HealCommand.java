@@ -22,12 +22,12 @@ public class HealCommand implements CommandExecutor {
                     player.sendMessage(ChatColor.GREEN + "Your health has been restored.");
                     player.setHealth(20);
                 } else {
-                    player.sendMessage(main.getConfig().getString("commands.heal.permission-message"));
+                    player.sendMessage(ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("commands.heal.permission-message")));
                 }
             }
         } else {
             if (sender instanceof Player) {
-                ((Player) sender).sendMessage(main.getConfig().getString("commands.heal.disabled-message"));
+                ((Player) sender).sendMessage(ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("commands.heal.disabled-message")));
             } else {
                 Bukkit.getLogger().warning(main.getConfig().getString("commands.heal.disabled-message"));
             }
