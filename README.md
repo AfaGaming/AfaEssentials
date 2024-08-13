@@ -1,7 +1,3 @@
 # AfaEssentials
-# AfaEssentials
-# AfaEssentials
-# AfaEssentials
-# AfaEssentials
-# AfaEssentials
-# AfaEssentials
+This is the source code of a spigot plugin.
+
