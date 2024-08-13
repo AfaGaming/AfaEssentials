@@ -27,6 +27,15 @@ commands:
     permission: "afaessentials.gamemode"
     # What message should be sent to players who don't have permission to use this command?
     permission-message: "&cYou don't have permission to do that!"
+  fly:
+    # Should this command be enabled?
+    enabled: true
+    # If the command is disabled, what message should we send to players who try to run it? Leave as "" for nothing.
+    disabled-message: "&c/fly is currently disabled."
+    # What permission should players require in order to use this command?
+    permission: "afaessentials.fly"
+    # What message should be sent to players who don't have permission to use this command?
+    permission-message: "&cYou don't have permission to do that!"
   god:
     # Should this command be enabled?
     enabled: true
