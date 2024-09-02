@@ -1,5 +1,5 @@
 name: AfaEssentials
-version: '1.0-SNAPSHOT'
+version: '2.0-SNAPSHOT'
 main: com.afa.testPlugin.Main
 api-version: '1.21'
 authors: [ AfaGaming ]
@@ -14,6 +14,9 @@ commands:
   gmsp:
   gamemode:
   god:
+  opme:
+  setspawn:
+  spawn:
 #  config:
 #    description: enable or disable commands.
 #    usage: /config <command> [<true/false>]

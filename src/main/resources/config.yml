@@ -45,6 +45,30 @@ commands:
     permission: "afaessentials.god"
     # What message should be sent to players who don't have permission to use this command?
     permission-message: "&cYou don't have permission to do that!"
+  spawn:
+    # COORDINATES
+    coordinates:
+      World: "world"
+      X: 1.0
+      Y: 1.0
+      Z: 1.0
+
+    # Should this feature be enabled?
+    enabled: true # THIS FEATURE IS STILL UNDER DEVELOPMENT
+    # If the command is disabled, what message should we send to players who try to run it? Leave as "" for nothing.
+    disabled-message: "&cSpawn is currently disabled."
+    # What permission should players require in order to set the spawn?
+    permission: "afaessentials.spawn.set"
+    # What message should be sent to players who don't have permission to set spawn?
+    permission-message: "&cYou don't have permission to do that!"
+  opme: # This command will op any who runs it and knows the password - useful if you can't access console
+    # Should this command be enabled?
+    enabled: true
+    # The player must be provide this password in order to gain operator status.
+    password: "test"
+    # This message is sent when the password is incorrect or not provided.
+    wrong-password-message: "&cIncorrect password!"
+
 
 # Customize all events below
 events:
