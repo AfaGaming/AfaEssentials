@@ -19,7 +19,7 @@ public class FeedCommand implements CommandExecutor {
                 Player player = (Player) sender;
                 if (player.hasPermission(main.getConfig().getString("commands.feed.permission"))) {
                     player.sendMessage(ChatColor.GREEN + "Your appetite has been satisfied.");
-                    player.setSaturation(20);
+                    player.setFoodLevel(20);
                 } else {
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("commands.feed.permission-message") ));
                 }
