@@ -2,6 +2,7 @@ package com.afa.testPlugin;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.attribute.Attribute;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -20,7 +21,7 @@ public class HealCommand implements CommandExecutor {
                 Player player = (Player) sender;
                 if (player.hasPermission(main.getConfig().getString("commands.heal.permission"))) {
                     player.sendMessage(ChatColor.GREEN + "Your health has been restored.");
-                    player.setHealth(20);
+                    player.setHealth(player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue());
                 } else {
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("commands.heal.permission-message")));
                 }
